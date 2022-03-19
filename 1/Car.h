@@ -25,5 +25,3 @@ private:
 bool operator==(const Car& first, const Car& second);
 std::ostream& operator<<(std::ostream& out, const Car& car);
 
-//added this
-bool operator>(const Car& first, const Car& second);

@@ -10,7 +10,9 @@ int main() {
     std::cout << "Initial: " << cars << "\n";
 
     // TODO: print out the cars in reverse order
-    // Added greater than operator overload to Car
-    std::sort(cars.begin(), cars.end(), std::greater<Car>());
+    
+    std::sort(cars.begin(), cars.end(), [](const Car& lhs, const Car& rhs) {
+        return lhs.price() > rhs.price();
+        });
     std::cout << "Reversed: " << "TODO" << "\n";
 }
